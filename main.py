@@ -1,5 +1,7 @@
+from broker import Broker
+from rotation import Rotation
 def main():
-    print('Welcome to Rotation')
-
+    b = Broker('test')
+    print(b)
 if __name__ == '__main__':
-    main()
+    Rotation().cmdloop()
